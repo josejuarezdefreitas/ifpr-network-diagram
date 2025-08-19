@@ -88,7 +88,39 @@
     </main>
 
     <div id="edit-modal" class="modal-overlay" style="display: none;">
-        </div>
+    <div class="modal-content">
+        <h3 id="modal-title">Editar Dispositivo</h3>
+        <form id="edit-form">
+            <label for="modal-name">Nome do Dispositivo:</label>
+            <input type="text" id="modal-name" required>
+
+            <label for="modal-ip">Endereço IP:</label>
+            <input type="text" id="modal-ip">
+
+            <label for="modal-info">Informações Adicionais:</label>
+            <input type="text" id="modal-info">
+
+            <label for="modal-photo">URL da Foto (opcional):</label>
+            <input type="text" id="modal-photo" placeholder="https://exemplo.com/imagem.png">
+
+            <label for="modal-website">URL do Website (opcional):</label>
+            <input type="text" id="modal-website" placeholder="https://exemplo.com">
+
+            <div id="modal-custom-fields" style="display: none;">
+                <label for="modal-custom-icon">Ícone Personalizado:</label>
+                <input type="text" id="modal-custom-icon">
+
+                <label for="modal-custom-color">Cor Personalizada:</label>
+                <input type="color" id="modal-custom-color">
+            </div>
+
+            <div class="modal-buttons">
+                <button type="button" id="modal-cancel">Cancelar</button>
+                <button type="submit" id="modal-save">Salvar</button>
+            </div>
+        </form>
+    </div>
+</div>
 
     <script type="module" src="main.js"></script>
 </body>
